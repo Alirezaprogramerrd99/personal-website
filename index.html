@@ -1,59 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alireza Rashidi | AI Engineer</title>
+
+  <style>
+    /* ===== Base Styles ===== */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      background: #ffffff;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 1100px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: #333;
+      color: #fff;
+      padding-top: 30px;
+      min-height: 70px;
+      border-bottom: #0779E4 3px solid;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    header a:hover {
+      color: #0779E4;
+    }
+
+    header ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    header li {
+      display: inline;
+      padding: 0 20px;
+    }
+
+    header #branding {
+      float: left;
+    }
+
+    header #branding h1 {
+      margin: 0;
+    }
+
+    header nav {
+      float: right;
+      margin-top: 10px;
+    }
+
+    /* ===== Hero / Showcase ===== */
+    #showcase {
+      min-height: 380px;
+      background:
+        linear-gradient(
+          rgba(7, 121, 228, 0.35),
+          rgba(0, 0, 0, 0.35)
+        ),
+        url("assets/ai-hero.jpg") center / cover no-repeat;
+      color: #ffffff;
+    }
+
+    #showcase .container {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    #showcase h1 {
+      font-size: 50px;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    }
+
+    #showcase p {
+      font-size: 20px;
+      max-width: 900px;
+      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    /* ===== Content Sections ===== */
+    .content-section {
+      padding: 40px 0;
+    }
+
+    .content-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* ===== Highlights ===== */
+    #featured-achievements {
+      background: #f9f9f9;
+    }
+
+    #featured-achievements ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      font-size: 1.1em;
+    }
+
+    #featured-achievements li {
+      margin-bottom: 15px;
+    }
+
+    /* ===== Contact ===== */
+    #contact a {
+      color: #0779E4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      padding: 20px;
+      margin-top: 20px;
+      color: #ffffff;
+      background-color: #333;
+      text-align: center;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      header #branding,
+      header nav {
+        float: none;
+        text-align: center;
+        width: 100%;
+      }
+
+      header {
+        padding-bottom: 20px;
+      }
+
+      #showcase h1 {
+        font-size: 32px;
+      }
+
+      #showcase p {
+        font-size: 17px;
+      }
+
+      #showcase .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+    }
+  </style>
+</head>
+
 <body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Alireza Rashidi</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="archive.html">Archive</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section id="showcase">
-        <div class="container">
-            <h1>AI Engineer & Software Developer</h1>
-            <p>MSc AI Candidate at University of Hull | 4+ Years Software Infrastructure Experience</p>
-        </div>
-    </section>
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1>Alireza Rashidi</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="designs.html">3D Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section id="about" class="content-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am an AI Engineer specializing in production-grade <strong>LLMs, RAG systems, and SLM optimization</strong>. Currently pursuing my MSc in Artificial Intelligence and Data Science at the <strong>University of Hull</strong>, I bridge the gap between complex research and scalable software infrastructure[cite: 72, 87].</p>
-            <p>With a Bachelor’s in Computer Engineering from <strong>Shahid Beheshti University</strong> (ranked Top 10) and years of professional backend experience at APAM PARDAZESH, I focus on deploying robust AI solutions using <strong>AWS SageMaker, ZenML, and PyTorch</strong>[cite: 80, 89, 113].</p>
-        </div>
-    </section>
+  <!-- ===== Hero ===== -->
+  <section id="showcase">
+    <div class="container">
+      <h1>AI Engineer & Software Developer</h1>
+      <p>
+        MSc Artificial Intelligence Candidate at the University of Hull |
+        Building production-grade LLMs, RAG systems, and agentic AI pipelines
+      </p>
+    </div>
+  </section>
 
-    <section id="featured-achievements" class="content-section" style="background: #f9f9f9;">
-        <div class="container">
-            <h2>Key Highlights</h2>
-            <ul style="list-style: none; padding: 0; text-align: center;">
-                <li style="margin-bottom: 10px;">🏆 <strong>2nd Place Winner</strong> - Leeds Hackathon 2025 (DemandIQ MVP) </li>
-                <li style="margin-bottom: 10px;">🎓 <strong>Top 10 Rank</strong> - BSc Computer Engineering, Shahid Beheshti University [cite: 140]</li>
-                <li style="margin-bottom: 10px;">🚀 <strong>LLMOps Specialist</strong> - Currently building production-ready LLM Twins and Scribing Systems [cite: 108, 111]</li>
-            </ul>
-        </div>
-    </section>
+  <!-- ===== About ===== -->
+  <section id="about" class="content-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am an AI Engineer specializing in production-grade
+        <strong>LLMs, RAG systems, and small language model optimization</strong>.
+        Currently pursuing my MSc in Artificial Intelligence and Data Science at
+        the <strong>University of Hull</strong>, I focus on bridging complex research
+        with scalable software infrastructure.
+      </p>
+      <p>
+        With a Bachelor’s degree in Computer Engineering from
+        <strong>Shahid Beheshti University</strong> (Top-10 ranked) and several years
+        of backend engineering experience, I build robust AI systems using
+        <strong>AWS SageMaker, ZenML, PyTorch, and FastAPI</strong>.
+      </p>
+    </div>
+  </section>
 
-    <section id="contact" class="content-section">
-        <div class="container">
-            <h2>Let's Connect</h2>
-            <p style="text-align: center;">Based in Kingston upon Hull, UK. Open to opportunities in AI Engineering and Backend Development starting May 2026[cite: 74, 86].</p>
-            <p style="text-align: center;">
-                <a href="https://github.com/Alirezaprogramerrd99" target="_blank">GitHub</a> | 
-                <a href="https://www.linkedin.com/in/alireza-rashidi-6a5400191/" target="_blank">LinkedIn</a> | 
-                <a href="mailto:arashidi1378@gmail.com">Email Me</a>
-            </p>
-        </div>
-    </section>
+  <!-- ===== Highlights ===== -->
+  <section id="featured-achievements" class="content-section">
+    <div class="container">
+      <h2>Key Highlights</h2>
+      <ul>
+        <li>🏆 <strong>2nd Place Winner</strong> — Leeds Hackathon 2025 (DemandIQ MVP)</li>
+        <li>🎓 <strong>Top-10 Graduate</strong> — BSc Computer Engineering</li>
+        <li>🚀 <strong>LLMOps & Agentic AI</strong> — Building production-ready AI systems</li>
+      </ul>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025-2026 Alireza Rashidi | Built in Hull, UK</p>
-    </footer>
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="content-section">
+    <div class="container">
+      <h2>Let’s Connect</h2>
+      <p style="text-align:center;">
+        Based in Kingston upon Hull, UK — Open to AI Engineering and Backend roles
+        starting May 2026.
+      </p>
+      <p style="text-align:center; font-size:1.1em;">
+        <a href="https://github.com/Alirezaprogramerrd99" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/alireza-rashidi-6a5400191/" target="_blank">LinkedIn</a> |
+        <a href="mailto:arashidi1378@gmail.com">Email</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2025–2026 Alireza Rashidi | Built in Hull, UK</p>
+  </footer>
+
 </body>
+</html>
